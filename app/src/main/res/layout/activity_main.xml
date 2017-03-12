@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.pokequiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ashpika" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Are you a real Pokémon fan?"
+            android:textColor="#212121"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Answer these 7 quiz questions and find out!"
+            android:textColor="#212121"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="1. Name the original creator of Pokémon:" />
+
+        <EditText
+            android:id="@+id/creator_name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="2. With what type of release did Pokémon begin?" />
+
+        <RadioGroup
+            android:id="@+id/releaseType_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/manga_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="Manga" />
+
+            <RadioButton
+                android:id="@+id/anime_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="Anime" />
+
+            <RadioButton
+                android:id="@+id/videogame_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="Video Game" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="3. Which were the first Pokémon video games released?" />
+
+        <CheckBox
+            android:id="@+id/pokemon_yellow_checkbox"
+            style="@style/CheckBoxStyle"
+            android:text="Pokémon Yellow" />
+
+        <CheckBox
+            android:id="@+id/pokemon_red_checkbox"
+            style="@style/CheckBoxStyle"
+            android:text="Pokémon Red" />
+
+        <CheckBox
+            android:id="@+id/pokemon_green_checkbox"
+            style="@style/CheckBoxStyle"
+            android:text="Pokémon Green" />
+
+        <CheckBox
+            android:id="@+id/pokemon_blue_checkbox"
+            style="@style/CheckBoxStyle"
+            android:text="Pokémon Blue" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="4. Which is the only Pokémon video game in which you can’t chose a starter pokemon?" />
+
+        <RadioGroup
+            android:id="@+id/noStarterGame_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/gold_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="Pokémon Gold" />
+
+            <RadioButton
+                android:id="@+id/yellow_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="Pokémon Yellow" />
+
+            <RadioButton
+                android:id="@+id/black_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="Pokémon Black" />
+
+            <RadioButton
+                android:id="@+id/red_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="Pokémon Red" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="5. What inspired the original Pokémon creator to make the game?" />
+
+        <RadioGroup
+            android:id="@+id/inspiration_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/bugs_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="He loved to collect bugs as a child." />
+
+            <RadioButton
+                android:id="@+id/fishing_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="He loved to fish as a child." />
+
+            <RadioButton
+                android:id="@+id/zoo_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="He loved to visit the zoo as a child." />
+        </RadioGroup>
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:fontFamily="sans-serif"
+            android:text="6. Name the Poké Ball variant that is guaranteed to catch any wild pokemon:" />
+
+        <EditText
+            android:id="@+id/pokeball_variant_text_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Poké Ball name"
+            android:inputType="textCapWords"
+            android:textColor="#212121"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="7. How many pokemon were there in the first generation?" />
+
+        <RadioGroup
+            android:id="@+id/gen_one_number_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/a_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="100" />
+
+            <RadioButton
+                android:id="@+id/b_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="126" />
+
+            <RadioButton
+                android:id="@+id/c_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="150" />
+
+            <RadioButton
+                android:id="@+id/d_radio_button"
+                style="@style/RadioButtonStyle"
+                android:text="151" />
+        </RadioGroup>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="checkAnswers"
+            android:text="Submit Answers"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>
